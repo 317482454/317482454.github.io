@@ -10,6 +10,8 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script src="javascripts/log.min.js"></script>
+
     <title>张华胜个人博客 by 317482454</title>
   </head>
   <body>
@@ -21,6 +23,15 @@
       </div>
     </div>
   </div>
+  <script>
+    log('[c="font-family: \'Helvetica Neue\', Helvetica, Arial, ' +
+            'sans-serif; color: #fff; font-size: 20px; padding: 15px 20px;' +
+            ' background: #444; border-radius: 4px; ' +
+            'line-height: 100px; text-shadow: 0 1px #000"]欢迎来到我的博客[c]');
+    log.l('%c住逻辑改变的不只是一点点，http://www.zhulogic.com/', 'color: red');
+    log.l('%c请将简历发送至317482454@qq.com（ 邮件标题请以“姓名-应聘前端职位-来自console”命名）', 'color: green');
+
+  </script>
   <script src="javascripts/index/TweenLite.min.js"></script>
   <script src="javascripts/index/EasePack.min.js"></script>
   <script src="javascripts/index/rAF.js"></script>

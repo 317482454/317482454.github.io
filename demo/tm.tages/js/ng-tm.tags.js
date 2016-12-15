@@ -18,25 +18,25 @@ angular.module('tm.tags', []).directive('tags', function () {
             var conf = scope.conf;
             scope.del = function (x) {
                 conf.splice(x, 1);
-            }//删除对象
+            };//删除对象
             scope.add=function(event){
                 if(event.keyCode==13){
                     var istext=true;
                     for (var i=0;i<conf.length;i++)
                     {
-                        if(conf[i].txt==scope.tagesModel){
+                        if(conf[i].txt==scope.tagesModel&&scope.tagesModel==''){
                             istext=false;
                         }
-                    }
+                    };
                     if(istext){
                         conf.push({txt:scope.tagesModel});
                         scope.tagesModel="";
                     }else{
                         scope.tagesModel="";
-                    }
+                    };
 
                 }
-            }//新增
+            };//新增
         }
     };
 });
